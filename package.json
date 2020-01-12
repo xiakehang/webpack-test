@@ -1,0 +1,30 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiakehang/webpack-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiakehang/webpack-test/issues"
+  },
+  "homepage": "https://github.com/xiakehang/webpack-test#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "path": "^0.12.7",
+    "style-loader": "^1.1.2",
+    "webpack": "^5.0.0-beta.11",
+    "webpack-cli": "^3.3.10"
+  }
+}
