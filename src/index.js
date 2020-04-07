@@ -1,14 +1,22 @@
+import React, { Component, createElement } from 'react';
+import ReactDOM from 'react-dom';
+
+import { createStore, applyMiddleware, compose } from 'redux';
+import { Provider } from 'react-redux';
+
+import createHistory from 'history/createBrowserHistory';
+import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
+
+import 'babel-polyfill';
+import createSagaMiddleware from 'redux-saga';
+import sagas from './sagas'
+
 import _ from 'lodash';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+import Test from './test';
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
-}
-
-document.body.appendChild(component());
+ReactDOM.render(
+  <Test />,
+  document.getElementById('root'),
+);
